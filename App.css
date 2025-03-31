@@ -1,0 +1,219 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+  border-radius: 4px;
+}
+
+.result h2 {
+  margin: 0;
+}
+
+.result p {
+  margin: 5px 0 0;
+}
+
+@media (max-width: 600px) {
+  form {
+      padding: 15px;
+  }
+  input[type="text"],
+  input[type="number"],
+  select,
+  input[type="submit"] {
+      padding: 10px;
+      font-size: 14px;
+  }
+}
+
+/* General Styles */
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styled Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  background-color: #007bff;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Custom Styling */
+.modal-header-custom {
+  background: #007bff;
+  color: white;
+}
+
+.modal-body-custom {
+  text-align: center;
+  font-size: 18px;
+}
+
+.modal-footer-custom {
+  display: flex;
+  justify-content: center;
+}
+
+/* Prediction Text */
+.prediction-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.prediction-text span {
+  color: #007bff;
+}
+
+/* LIME Explanation */
+.lime-title {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lime-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.lime-list li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+/* Explanation Button */
+.explanation-btn {
+  background-color: #17a2b8;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.explanation-btn:hover {
+  background-color: #138496;
+}
+
+.explanation-list {
+  padding-left: 20px;
+  list-style-type: disc; /* Bullet points */
+}
+
+.explanation-list li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.probability-chart {
+  margin-bottom: 20px;
+}
+
